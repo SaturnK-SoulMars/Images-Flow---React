@@ -156,7 +156,7 @@ const ImagesFlow = ({
             <div
               key={index}
               ref={(el) => (imageRefs.current[index] = el)}
-              className="absolute left-1/2 top-1/2 h-87.5 w-125 -translate-x-1/2 -translate-y-1/2"
+              className="absolute left-1/2 top-1/2 h-87.5 w-fit -translate-x-1/2 -translate-y-1/2"
             >
               <img
                 src={src}
@@ -173,12 +173,12 @@ const ImagesFlow = ({
       </section>
 
       {/* Outro */}
-      <section className="flex min-h-screen items-center justify-center bg-black text-white overflow-hidden">
+      {/* <section className="flex min-h-screen items-center justify-center bg-black text-white overflow-hidden">
         <div className="text-center">
           <h1 className="text-6xl font-light tracking-widest">{outroTitle}</h1>
           {outroSubtitle && <p className="mt-4 opacity-70">{outroSubtitle}</p>}
         </div>
-      </section>
+      </section> */}
     </main>
   );
 };
